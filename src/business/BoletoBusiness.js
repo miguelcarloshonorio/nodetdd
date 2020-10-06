@@ -30,11 +30,11 @@ class BoletoBusiness {
     }
 
     calcularDesconto(){
-        return this.valor * 0.05;
+        return this.valor * 0.07;
     }
     
     calcularAcrescimento(){
-        return this.valor * 0.05;
+        return this.valor * 0.07;
     }
 }
 
