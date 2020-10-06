@@ -28,7 +28,7 @@ describe("Endpoint Test", async () => {
 
         const response = await request(app).post('/boleto/calculate').send(body);
 
-        expect(response.body).eq(Number(95));
+        expect(response.body).eq(Number(93));
     });
     
     it("POST: Boleto pago com atraso com multa", async () => {
@@ -40,6 +40,6 @@ describe("Endpoint Test", async () => {
 
         const response = await request(app).post('/boleto/calculate').send(body);
 
-        expect(response.body).eq(Number(105));
+        expect(response.body).eq(Number(107));
     });
 });

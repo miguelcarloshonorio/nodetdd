@@ -25,7 +25,7 @@ describe('Boleto Business Suite', () => {
             const dataAtual = new Date(2020, 10, 7);
 
             // WHEN
-            expect(target.calcularValorAPagar(dataAtual)).to.eq(95);
+            expect(target.calcularValorAPagar(dataAtual)).to.eq(93);
         });
 
         it('Boleto pago com atraso com multa', () => {
@@ -36,7 +36,7 @@ describe('Boleto Business Suite', () => {
             const dataAtual = new Date(2020, 10, 17);
 
             // WHEN
-            expect(target.calcularValorAPagar(dataAtual)).to.eq(105);
+            expect(target.calcularValorAPagar(dataAtual)).to.eq(107);
         });
 
         it('Boleto criado com data inválida', () => {
