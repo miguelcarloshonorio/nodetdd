@@ -39,14 +39,14 @@ describe('Boleto Business Suite', () => {
             expect(target.calcularValorAPagar(dataAtual)).to.eq(105);
         });
 
-        it.skip('Boleto criado com data inválida', () => {
+        it('Boleto criado com data inválida', () => {
 
             expect(function(){
                 new BoletoBusiness(null, 100);
             }).to.throw(Error, 'Data Inválida');
         });
         
-        it.skip('Boleto criado com valor inválida', () => {
+        it('Boleto criado com valor inválida', () => {
             expect(function(){
                 new BoletoBusiness(new Date(), null);
             }).to.throw(Error, 'Valor Obrigatório');
