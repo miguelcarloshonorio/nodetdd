@@ -16,6 +16,10 @@
     "date-fns": "^2.16.1",
     "express": "^4.17.1"
   },
+  "author": {
+    "username": "miguelcarloshonorio",
+    "name": "Miguel Carlos Honório"
+  },
   "devDependencies": {
     "@types/supertest": "^2.0.10",
     "@types/mocha": "types/mocha",
